@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Bootstrap & jQuery CDN -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Bean Boutique Coffee</title>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="nav-link-container">
+            <div class="logo-container">
+                <img class="animate__animated animate__rubberBand" src="../public/coffee-beans.png" alt="coffee-beans">
+                <h2 class="margin-zero">Bean Boutique Coffee</h2>
+            </div>
+
+            <ul class="nav-link-group">
+                <li class="nav-link"><a href="./index.html">HOME</a></li>
+                <li class="dropdown menu-link">
+                    <p role="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        PRODUCTS
+                    </p>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="./brewing_equipment.html">BREWING EQUIPMENT</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="./coffee_selection.html">COFFEE SELECTION</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-link"><a href="./events_and_workshops.html">EVENTS</a></li>
+                <li class="nav-link"><a href="./special_offers_and_subscriptions.html">SUBSCRIPTIONS</a></li>
+            </ul>
+
+            <div class="icon-container">
+                <a class="icon-link" href="./shopping_cart.html"><img src="../public/bullock-cart.png" alt=""></a>
+            </div>
+
+            <button class="navbar-toggle menu-button" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list navbar-toggler-icon"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar">
+                <div class="offcanvas-body d-flex justify-content-center align-items-center">
+                    <ul class="p-0 m-0 d-flex flex-column align-items-center gap">
+                        <li>
+                            <a class="icon-link" href="./shopping_cart.html"><img src="../public/bullock-cart.png"
+                                    alt=""></a>
+
+                        </li>
+                        <li class="nav-link"><a href="./index.html">HOME</a></li>
+                        <li class="nav-link">
+                            <a href="./brewing_equipment.html">BREWING EQUIPMENT</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="./coffee_selection.html">COFFEE SELECTION</a>
+                        </li>
+                        <li class="nav-link"><a href="./events_and_workshops.html">EVENTS</a></li>
+                        <li class="nav-link"><a href="./special_offers_and_subscriptions.html">SUBSCRIPTIONS</a></li>
+                        <li> <button class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <img src="../public/remove.png" alt="remove">
+                            </button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  <!--coffee selection section -->
+  <div class="search-wrapper">
+    <input id="search-bar" type="text" placeholder="Search Product" class="search-input" >
+  </div>
+
+  <div class="container coffee_selection my-5" id="coffee_selection">
+    <div id="coffee_selection_container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <!-- coffee cart Card -->
+    </div>
+  </div>
+
+  <!-- footer-section -->
+  <footer class="footer-section">
+    <div class="footer-container">
+      <div class="footer-content-group">
+        <h3 class="footer-content-title">Bean Boutique</h3>
+        <p class="footer-content-context">
+          At Bean Boutique, we are passionate about crafting memorable coffee
+          moments. Our carefully curated blends are roasted to perfection and
+          made for those who appreciate the art of every brew from bean to
+          cup.
+        </p>
+      </div>
+      <ul class="quick-link-group">
+        <li class="quick-link"><a href="./index.html">Home</a></li>
+        <li class="quick-link">
+          <a href="./coffee_selection.html">Coffee Selection</a>
+        </li>
+        <li class="quick-link">
+          <a href="./brewing_equipment.html">Brewing Equipment</a>
+        </li>
+        <li class="quick-link">
+          <a href="./events_and_workshops.html">Events</a>
+        </li>
+        <li class="quick-link">
+          <a href="./special_offers_and_subscriptions.html">Subscriptions</a>
+        </li>
+        <li class="quick-link"><a href="./contact_us.html">Contact Us</a></li>
+      </ul>
+      <hr class="line">
+      <p class="copy-right">©2025 Bean Boutique - All right reserved.</p>
+    </div>
+  </footer>
+
+  <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+    crossorigin="anonymous"></script>
+  <script>
+    let coffee_packages = [
+      {
+        id: 11,
+        image: "../public/Coffee selection/single1.png",
+        name: "Single-Origin",
+        description:
+          "Smooth and vibrant with notes of tropical fruit, brown sugar, and a hint of spice",
+        price: 20.0,
+      },
+      {
+        id: 12,
+        image: "../public/Coffee selection/single2.png",
+        name: "Single-Origin Costa Rica",
+        description:
+          "Bright and balanced with citrus acidity, honey sweetness, and floral aroma",
+        price: 20.0,
+      },
+      {
+        id: 13,
+        image: "../public/Coffee selection/single3.png",
+        name: "Single-Origin Ethiopia",
+        description:
+          "Floral and fruity with notes of jasmine, bergamot, and ripe berries",
+        price: 20.0,
+      },
+      {
+        id: 14,
+        image: "../public/Coffee selection/single4.png",
+        name: "Single-Origin Peru",
+        description:
+          "Mild and sweet with notes of milk chocolate, citrus, and subtle nuttiness",
+        price: 20.0,
+      },
+      {
+        id: 15,
+        image: "../public/Coffee selection/premium1.png",
+        name: "Platinum Blend",
+        description:
+          "A limited edition blend of 100% Arabica beans from PNG, Costa Rica, Colombia, and Guatemala",
+        price: 20.0,
+      },
+      {
+        id: 16,
+        image: "../public/Coffee selection/premium2.png",
+        name: "Gold Blend",
+        description:
+          "A smooth and creamy 100% Arabica blend featuring single-origin beans from Costa Rica, Colombia, Brazil Dulce, and Guatemala",
+        price: 20.0,
+      },
+      {
+        id: 17,
+        image: "../public/Coffee selection/premium3.png",
+        name: "Organic Kick Blend",
+        description:
+          "A bold, full bodied blend of organic beans from Peru, Honduras, and Indonesia",
+        price: 20.0,
+      },
+      {
+        id: 18,
+        image: "../public/Coffee selection/premium4.png",
+        name: "Sweet Valley Blend",
+        description:
+          "A smooth blend of single-origin beans from Peru, Colombia, and Guatemala",
+        price: 20.0,
+      },
+      {
+        id: 19,
+        image: "../public/Coffee selection/Drip_coffee.png",
+        name: "Drip Coffee",
+        description: "Elixir’s single origin drip bags",
+        price: 20.0,
+      },
+      {
+        id: 20,
+        image: "../public/Coffee selection/Odd_coffee.png",
+        name: "Odd Coffee",
+        description:
+          "Intense single origin dark roast from Odd Coffee Roasters",
+        price: 20.0,
+      },
+    ];
+
+    let coffeeCardContainer = document.getElementById(
+      "coffee_selection_container"
+    );
+
+    let searchBar = document.getElementById("search-bar");
+
+    let createCard = (card) => {
+      let cardComponent = `
+          <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="${card.image}"
+              class="card-img-top img-fluid p-3"
+              style="max-height: 200px; object-fit: contain"
+              alt="${card.name}"
+            />
+            <div class="card-body">
+              <h5 class="card-title">${card.name}</h5>
+              <p class="card-text">${card.description}</p>
+              <p>$${card.price}</p>
+              <button
+                onclick="addToCart(${card.id})"
+                class="btn btn-success"
+                >Add to Cart</
+              button>
+            </div>
+          </div>
+        </div>
+        `;
+
+      return cardComponent;
+    };
+
+    let addCartToContainer = (data) => {
+      coffeeCardContainer.innerHTML = '';
+      if (data.length > 0) {
+        data.forEach((card) => {
+          let equipmentCard = createCard(card);
+          coffeeCardContainer.innerHTML += equipmentCard;
+        });
+      } else {
+        coffeeCardContainer.innerHTML += "<p>Product is not found!</p>"
+      }
+    };
+
+    addCartToContainer(coffee_packages);
+
+    searchBar.addEventListener("keyup", (e) => {
+
+      let searchValue = coffee_packages.filter((item) =>
+        item.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
+      )
+
+      addCartToContainer(searchValue);
+
+    })
+
+    let filterProduct = (id) => {
+      let product = coffee_packages.find((item) => item.id === id);
+      return product;
+    };
+
+    let pushItemToCart = (product, cart) => {
+      cart.push(product);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      console.log(cart);
+    };
+
+    let addToCart = (id) => {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      let product = filterProduct(id);
+      let exists =
+        cart.length > 0 && cart.some((item) => item.id === product.id);
+      exists
+        ? window.alert("Item already exists.")
+        : pushItemToCart(product, cart);
+    };
+
+  </script>
+</body>
+
+</html>

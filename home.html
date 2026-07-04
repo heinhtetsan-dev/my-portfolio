@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./access/tailwind.js">
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- nav bar start -->
+
+        <!-- hamburger menu  -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+
+        <nav class="nav-container">
+            <div class="brand-logo">
+                <i class="fa-solid fa-user-secret py-2"></i>
+            </div>
+
+            <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-link">
+                <li><a href="./home.html">About</a></li>
+                <li><a href="#">Services</a></li>
+
+                <li class="relative group py-2 nav-dropdown">
+                    <!-- peer checkbox: tap to open on mobile, hover still works on desktop -->
+                    <input type="checkbox" id="portfolio-dropdown-toggle" class="hidden peer">
+                    <label for="portfolio-dropdown-toggle"
+                        class="cursor-pointer select-none transition-colors duration-200 flex items-center justify-between md:justify-start gap-1 w-full">
+                        Portfolio
+                        <i
+                            class="fa-solid fa-angle-down text-[10px] mt-0.5 transition-transform duration-300 peer-checked:rotate-180 md:group-hover:rotate-180"></i>
+                    </label>
+
+                    <ul
+                        class="dropdown-menu hidden peer-checked:flex flex-col w-full mt-2 static bg-slate-800/60
+                        md:flex md:flex-col md:absolute md:top-full md:left-1/2 md:-translate-x-1/2 md:mt-2 md:w-44 md:bg-slate-800
+                        md:opacity-0 md:invisible md:group-hover:opacity-100 md:group-hover:visible md:scale-95 md:group-hover:scale-100
+                        text-slate-200 rounded-lg shadow-xl border border-slate-700/50 transition-all duration-300 transform z-50 overflow-hidden">
+                        <li>
+                            <a href="./projects.html"
+                                class="block px-4 py-2.5 hover:bg-slate-700 hover:text-white transition-colors duration-150">Projects</a>
+                        </li>
+                        <li>
+                            <a href="./certificates.html"
+                                class="block px-4 py-2.5 hover:bg-slate-700 hover:text-white border-t border-slate-700/30 transition-colors duration-150">Certificates</a>
+                        </li>
+                        <li>
+                            <a href="./tech-stack.html"
+                                class="block px-4 py-2.5 hover:bg-slate-700 hover:text-white border-t border-slate-700/30 transition-colors duration-150">Tech
+                                Stack</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- for mobile menu  -->
+                <li class="mobile-only-actions">
+                    <button id="modebtn-mobile" class="modebtn"><i class="fa-solid fa-lightbulb"></i> Mode</button>
+                </li>
+                <li class="mobile-only-actions">
+                    <a href="./contact.html" class="btn-hire">Hire Me</a>
+                </li>
+            </ul>
+
+            <div class="nav-action">
+                <button id="modebtn" class="modebtn"><i class="fa-solid fa-lightbulb"></i></button>
+                <a href="./contact.html" class="btn-hire">Hire Me</a>
+            </div>
+        </nav>
+        <!-- nav bar end  -->
+
+        <!-- backdrop -->
+        <label for="nav-toggle" class="nav-backdrop"></label>
+
+        <section class="hero">
+            <div class="about-me">
+                <h1>Hello, I'm</h1>
+                <h1 class="text-[#eab308]">ZALE</h1>
+                <h3>A Developer</h3>
+                <p>Foused on building mordern responsive and efficient websites.With a growing experience in HTML, CSS,
+                    JavaScript and React.</p>
+                <div class="hero-btn">
+                    <div class="btn"><a href="/projects.html">
+                            Explore Work
+                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        </a>
+                    </div>
+                    <div class="btn"><a href="./access/certificates/tw履歴書.pdf" target="_blank" rel="noopener">
+                            Download CV
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ပြန်ပြင်ရန် -->
+            <div class="profile">
+                <img src="https://media.tenor.com/xOU42VD2n4sAAAAd/wuwa-eating.gif" alt="gif">
+            </div>
+        </section>
+    </header>
+    <!-- shape divider -->
+    <div class="custom-shape-divider-bottom-1782828838">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
+    <!-- shape divider  -->
+
+    <section class="services">
+        <h2>My Services provide for my Clients</h2>
+        <div class="feature-box">
+            <div class="container">
+                <div class="card">
+                    <img class="s-logo" src="./access/Service_logo/web.png" alt="img">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>Landing Pages</li>
+                        <li>Web Applications</li>
+                        <li>E-commerce</li>
+                        <li>Performance</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img class="s-logo" src="./access/Service_logo/backend.png" alt="img">
+                    <h3>Backend Services</h3>
+
+                    <ul>
+                        <li>Rest API</li>
+                        <li>Database Design</li>
+                        <li>Security</li>
+                        <li>Cloud</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img class="s-logo" src="./access/Service_logo/mobile-development.png" alt="img">
+                    <h3>Mobile Development</h3>
+
+                    <ul>
+                        <li>Android Apps</li>
+                        <li>IOS Apps</li>
+                        <li>UI Implementation</li>
+                        <li>Testing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+
+        <h2>Portfolio Showcase</h2>
+
+        <div class="port-container">
+            <div class="port-card">
+                <p class="indent-2"> I am an aspiring Software Engineer passionate about building scalable software,
+                    solving real-world
+                    problems, and continuously learning modern technologies. This portfolio showcases my projects,
+                    technical skills, and certifications throughout my journey.</p>
+
+                <div class="branch-container">
+                    <div class="port-branch">
+                        <a href="./projects.html"><button>Projects</button></a>
+                        <a href="./certificates.html"><button>Certificates</button></a>
+                        <a href="./tech-stack.html"><button>Tech Stack</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="attribute">
+
+                <div class="skill-container">
+                    <div class="skill-box">
+                        <span class="title">HTML</span>
+                        <div class="skill-bar">
+                            <span class="skill-per html">
+                                <span class="tooltip">80%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <span class="title">CSS</span>
+                        <div class="skill-bar">
+                            <span class="skill-per css">
+                                <span class="tooltip">70%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <span class="title">JavaScript</span>
+                        <div class="skill-bar">
+                            <span class="skill-per javascript">
+                                <span class="tooltip">50%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <span class="title">React</span>
+                        <div class="skill-bar">
+                            <span class="skill-per React">
+                                <span class="tooltip">20%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <span class="title">NodeJS</span>
+                        <div class="skill-bar">
+                            <span class="skill-per nodejs">
+                                <span class="tooltip">30%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <span class="title">MySQL</span>
+                        <div class="skill-bar">
+                            <span class="skill-per MySQL">
+                                <span class="tooltip">50%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <span class="title">PHP</span>
+                        <div class="skill-bar">
+                            <span class="skill-per PHP">
+                                <span class="tooltip">20%</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <section class="personal">
+            <div class="about-me">
+                <div class="photo-container">
+                    <img class="my-photo"
+                        src="https://i.pinimg.com/originals/79/d9/e6/79d9e6e699f7591360f5bf7d7e58591d.jpg" alt="">
+                </div>
+                <div class="detail">
+                    <h2>About Me</h2>
+                    <p>I'm a Computer Science student passionate about web development and software engineering.I enjoy
+                        building responsive websites, learning new technologies and solving real-world problems
+                        through code.I believe the great work is born from a combination of pieces logic and boundless
+                        creativity. My journey in webite creation began with a deep curiosity about how websites can be
+                        interactive and dynamic.Now I focus on helping various clients and projects transform complex
+                        ideas
+                        into simple and elegant solutions.</p>
+                    <div class="info">
+                        <div class="info-tag">
+                            <i class="fa-solid fa-location-dot" style="color: rgb(255, 212, 59);"></i>
+                            <h3>Location</h3>
+                        </div>
+                        <span>Japan, Tokyo</span>
+
+                        <div class="info-tag">
+                            <i class="fa-solid fa-phone" style="color: rgb(255, 212, 59);"></i>
+                            <h3>Phone</h3>
+                        </div>
+                        <span>+81 9045-3378</span>
+
+                        <div class="info-tag">
+                            <i class="fa-solid fa-graduation-cap" style="color: rgb(255, 212, 59);"></i>
+                            <h3>GPA</h3>
+                        </div>
+                        <span>3.3</span>
+                        <div class="info-tag">
+                            <i class="fa-solid fa-envelope-circle-check" style="color: rgb(255, 212, 59);"></i>
+                            <h3>E-mail</h3>
+                        </div>
+                        <span>heinhtetsan5050@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="contant-box">
+            <h2>Contact</h2>
+            <div class="contact">
+                <div class="follow">
+                    <p>Get in touch with me via social media or send me an email.
+                    </p>
+                    <a href=""><i
+                            class="transition-all duration-300 ease-in-out hover:text-blue-600 fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/hein-htet-san-900979413/"><i
+                            class="transition-all duration-300 ease-in-out fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/heinhtetsan-dev"><i
+                            class="transition-all duration-300 ease-in-out hover:text-violet-600 fa-brands fa-github"></i></a>
+                </div>
+
+                <div class="mail-box">
+                    <p>Send me an E-mail.</p>
+                    <form action="https://formspree.io/f/xeebpzag" method="POST">
+                        <div class="input-box">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="E-mail">
+                            <input type="subject" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="mail-sumit">
+                            <a href="https://mail.google.com/mail/u/0/#inbox"><button type="submit">Send
+                                    Message</button></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="boots"></div>
+
+
+</body>
+
+</html>

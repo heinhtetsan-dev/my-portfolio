@@ -1,0 +1,146 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#Project\\EcoLife_App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0A1AFE-B58A-40B7-844B-623D36269AB0}|EcoLife_App.csproj|d:\\c#project\\ecolife_app\\wellnesshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C0A1AFE-B58A-40B7-844B-623D36269AB0}|EcoLife_App.csproj|solutionrelative:wellnesshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0A1AFE-B58A-40B7-844B-623D36269AB0}|EcoLife_App.csproj|d:\\c#project\\ecolife_app\\signupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C0A1AFE-B58A-40B7-844B-623D36269AB0}|EcoLife_App.csproj|solutionrelative:signupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0A1AFE-B58A-40B7-844B-623D36269AB0}|EcoLife_App.csproj|d:\\c#project\\ecolife_app\\signinview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C0A1AFE-B58A-40B7-844B-623D36269AB0}|EcoLife_App.csproj|solutionrelative:signinview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0A1AFE-B58A-40B7-844B-623D36269AB0}|EcoLife_App.csproj|d:\\c#project\\ecolife_app\\signinview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9C0A1AFE-B58A-40B7-844B-623D36269AB0}|EcoLife_App.csproj|solutionrelative:signinview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0A1AFE-B58A-40B7-844B-623D36269AB0}|EcoLife_App.csproj|d:\\c#project\\ecolife_app\\ecodatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C0A1AFE-B58A-40B7-844B-623D36269AB0}|EcoLife_App.csproj|solutionrelative:ecodatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0A1AFE-B58A-40B7-844B-623D36269AB0}|EcoLife_App.csproj|d:\\c#project\\ecolife_app\\authhost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C0A1AFE-B58A-40B7-844B-623D36269AB0}|EcoLife_App.csproj|solutionrelative:authhost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0A1AFE-B58A-40B7-844B-623D36269AB0}|EcoLife_App.csproj|d:\\c#project\\ecolife_app\\activitypopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C0A1AFE-B58A-40B7-844B-623D36269AB0}|EcoLife_App.csproj|solutionrelative:activitypopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WellnessHub.cs",
+              "DocumentMoniker": "D:\\C#Project\\EcoLife_App\\WellnessHub.cs",
+              "RelativeDocumentMoniker": "WellnessHub.cs",
+              "ToolTip": "D:\\C#Project\\EcoLife_App\\WellnessHub.cs",
+              "RelativeToolTip": "WellnessHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T06:10:31.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignUpView.cs",
+              "DocumentMoniker": "D:\\C#Project\\EcoLife_App\\SignUpView.cs",
+              "RelativeDocumentMoniker": "SignUpView.cs",
+              "ToolTip": "D:\\C#Project\\EcoLife_App\\SignUpView.cs",
+              "RelativeToolTip": "SignUpView.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T06:10:26.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SignInView.cs",
+              "DocumentMoniker": "D:\\C#Project\\EcoLife_App\\SignInView.cs",
+              "RelativeDocumentMoniker": "SignInView.cs",
+              "ToolTip": "D:\\C#Project\\EcoLife_App\\SignInView.cs",
+              "RelativeToolTip": "SignInView.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T06:10:19.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SignInView.cs [Design]",
+              "DocumentMoniker": "D:\\C#Project\\EcoLife_App\\SignInView.cs",
+              "RelativeDocumentMoniker": "SignInView.cs",
+              "ToolTip": "D:\\C#Project\\EcoLife_App\\SignInView.cs [Design]",
+              "RelativeToolTip": "SignInView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T06:10:18.099Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EcoDataStore.cs",
+              "DocumentMoniker": "D:\\C#Project\\EcoLife_App\\EcoDataStore.cs",
+              "RelativeDocumentMoniker": "EcoDataStore.cs",
+              "ToolTip": "D:\\C#Project\\EcoLife_App\\EcoDataStore.cs",
+              "RelativeToolTip": "EcoDataStore.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAkwBIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T06:10:04.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthHost.cs",
+              "DocumentMoniker": "D:\\C#Project\\EcoLife_App\\AuthHost.cs",
+              "RelativeDocumentMoniker": "AuthHost.cs",
+              "ToolTip": "D:\\C#Project\\EcoLife_App\\AuthHost.cs",
+              "RelativeToolTip": "AuthHost.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAgwBcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T06:09:52.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ActivityPopup.cs",
+              "DocumentMoniker": "D:\\C#Project\\EcoLife_App\\ActivityPopup.cs",
+              "RelativeDocumentMoniker": "ActivityPopup.cs",
+              "ToolTip": "D:\\C#Project\\EcoLife_App\\ActivityPopup.cs",
+              "RelativeToolTip": "ActivityPopup.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAF8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T06:09:28.02Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

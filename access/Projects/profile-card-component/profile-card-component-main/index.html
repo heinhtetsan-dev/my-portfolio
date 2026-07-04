@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- tailwindcss -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    *{
+      font-family: "Kumbh Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-variation-settings:
+      "YOPQ" 300;
+    }
+    @theme {
+      --color-Blue-600: hsl(185, 75%, 39%);
+      --color-Navy-950: hsl(229, 23%, 23%);
+      --color-Gray-500: hsl(227, 10%, 46%);
+      --color-Gray-100: hsl(225, 10%, 92%);
+      }
+    </style>
+  <title>Profile card component</title>
+
+</head>
+
+<body>
+
+  <section class="min-h-screen flex justify-center items-center relative overflow-hidden"> <!--profile-->
+    <!-- background pattern -->
+    <img class="absolute -top-[30rem] -left-[20rem]" src="images/bg-pattern-top.svg" alt="img">
+    <img class=" absolute -bottom-[40rem] -right-[15rem]" src="images/bg-pattern-bottom.svg" alt="img">
+
+
+    <div class="card bg-white relative w-[350px] rounded-2xl overflow-hidden shadow-2xl"> <!--profile-card-->
+
+      <div class="relative flex justify-center"> <!--profile-header-->
+        <img class="w-full h-full" src="images/bg-pattern-card.svg" alt="img">
+        <img class="object-cover rounded-full absolute border-white border-4 -bottom-13" src="images/image-victor.jpg"
+          alt="img">
+      </div>
+
+      <div class="text-center pt-14 pb-5"> <!--profile-title-->
+        <h2 class="text-Gray-500 text-lg font-bold">Victor Crest<span class=" text-gray-500 font-normal ml-2">26</span></h2>
+        <p class=" text-gray-500">London</p>
+      </div>
+
+      <hr class="text-gray-500">
+
+
+      <div class="flex justify-evenly p-9"> <!--profile-info-->
+        <!-- <div class="grid grid-cols-3 text-center p-10"> -->
+
+
+        <div class="text-center"> <!--followers-->
+          <p class="font-bold">80k</p>
+          <p class="text-[10px]">Followers</p>
+        </div>
+
+        <div class="text-center"> <!--likes-->
+          <p class="font-bold">803K</p>
+          <p class="text-[10px]">Likes</p>
+        </div>
+
+        <div class="text-center"> <!--photos-->
+          <p class="font-bold">1.4K</p>
+          <p class="text-[10px]">Photos</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

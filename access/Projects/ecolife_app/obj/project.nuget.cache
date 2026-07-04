@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "bYu/1selGmM=",
+  "success": true,
+  "projectFilePath": "D:\\C#Project\\EcoLife_App\\EcoLife_App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\WaiPhyoMaung\\.nuget\\packages\\system.configuration.configurationmanager\\10.0.2\\system.configuration.configurationmanager.10.0.2.nupkg.sha512",
+    "C:\\Users\\WaiPhyoMaung\\.nuget\\packages\\system.data.oledb\\10.0.2\\system.data.oledb.10.0.2.nupkg.sha512",
+    "C:\\Users\\WaiPhyoMaung\\.nuget\\packages\\system.diagnostics.eventlog\\10.0.2\\system.diagnostics.eventlog.10.0.2.nupkg.sha512",
+    "C:\\Users\\WaiPhyoMaung\\.nuget\\packages\\system.diagnostics.performancecounter\\10.0.2\\system.diagnostics.performancecounter.10.0.2.nupkg.sha512",
+    "C:\\Users\\WaiPhyoMaung\\.nuget\\packages\\system.security.cryptography.protecteddata\\10.0.2\\system.security.cryptography.protecteddata.10.0.2.nupkg.sha512",
+    "C:\\Users\\WaiPhyoMaung\\.nuget\\packages\\system.threading.accesscontrol\\10.0.2\\system.threading.accesscontrol.10.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

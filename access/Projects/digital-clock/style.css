@@ -1,0 +1,108 @@
+:root{
+    --bg-color:#0a0f1c;
+    --text-color: #9ca3af;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow: 0 10px 30px rgb(4, 4, 4);
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    .logo {
+
+        img {
+            width: 8rem;
+            background-size: cover;
+            border-radius: 2rem;
+        }
+
+    }
+
+    .title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+
+    .toggle {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 6px;
+        border-radius: 150px
+    }
+
+    .btn {
+        padding: 8px 12px;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .active {
+        color: rgb(21, 183, 185);
+        background: rgba(255, 255, 255, 0.08);
+    }
+}
+
+.display {
+    display: flex;
+    gap: 3rem;
+
+    .time {
+        color: #fff;
+        text-shadow:  0 0 10px rgba(255,255,255,.3),
+        0 0 25px rgba(21, 182, 185, 0.438);
+        font-size: 3.5rem;
+    }
+    .season{
+        margin-left: auto;
+    .month{
+        font-weight: 800;
+    }
+
+    .date {
+        margin-left: auto;
+        padding-right: 2rem;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+    }
+}
+
+.footer {
+    display: flex;
+    span {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Product preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --font-display:"Fraunces", serif;
+      --font-mont:"Montserrat", sans-serif;
+
+       --color-Green-500: hsl(158, 36%, 37%);
+      --color-Green-700: hsl(158, 42%, 18%);
+      --color-Black: hsl(212, 21%, 14%);
+      --color-Grey: hsl(228, 12%, 48%);
+      --color-Cream: hsl(30, 38%, 92%);
+      --color-White: hsl(0, 0%, 100%);
+      }
+    </style>
+
+</head>
+
+<body>
+  <!-- section -->
+  <div class="bg-Cream md:h-screen flex justify-center items-center">
+    <!-- container -->
+    <div class="max-w-[375px] md:max-w-[600px] md:grid-cols-2 bg-white grid rounded-lg overflow-hidden font-mont m-6">
+     
+        <img class="md:w-full" src="./images/image-product-desktop.jpg" alt="img">
+     
+      <!-- content -->
+      <div class="p-6 mx-4">
+        <!-- product -->
+        <h4 class=" font-thin text-Grey tracking-[4px] uppercase text-[10px] pb-3 ">Perfume</h4>
+        <h2 class=" font-display font-bold pb-4 text-4xl">Gabrielle Essence Eau De Parfum
+        </h2>
+        <p class="text-[14px] text-Grey pb-4 leading-6 tracking-wider font-mont">A floral,solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.</p>
+
+        <div class="flex justify-start gap-4">
+          <h3 class="font-display text-3xl font-bold pb-7 text-Green-500">$149.99</h3>
+          <del class="pt-3 text-Grey text-xs">$169.99</del>
+        </div>
+
+        <div class="p-3 text-white bg-Green-500 flex justify-center items-center rounded-lg gap-3 hover:bg-Green-700 cursor-pointer">
+          <img class="" src="./images/icon-cart.svg" alt="icon">
+          <a href="#"><button class="font-mont py-1">Add to Cart</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="ActivityPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AuthHost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SignInView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SignUpView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="WellnessHub.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

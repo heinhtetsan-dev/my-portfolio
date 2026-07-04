@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Bootstrap & jQuery CDN -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Bean Boutique Coffee</title>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="nav-link-container">
+            <div class="logo-container">
+                <img class="animate__animated animate__rubberBand" src="../public/coffee-beans.png" alt="coffee-beans">
+                <h2 class="margin-zero">Bean Boutique Coffee</h2>
+            </div>
+
+            <ul class="nav-link-group">
+                <li class="nav-link"><a href="./index.html">HOME</a></li>
+                <li class="dropdown menu-link">
+                    <p role="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        PRODUCTS
+                    </p>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="./brewing_equipment.html">BREWING EQUIPMENT</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="./coffee_selection.html">COFFEE SELECTION</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-link"><a href="./events_and_workshops.html">EVENTS</a></li>
+                <li class="nav-link"><a href="./special_offers_and_subscriptions.html">SUBSCRIPTIONS</a></li>
+            </ul>
+
+            <div class="icon-container">
+                <a class="icon-link" href="./shopping_cart.html"><img src="../public/bullock-cart.png" alt=""></a>
+            </div>
+
+            <button class="navbar-toggle menu-button" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list navbar-toggler-icon"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar">
+                <div class="offcanvas-body d-flex justify-content-center align-items-center">
+                    <ul class="p-0 m-0 d-flex flex-column align-items-center gap">
+                        <li>
+                            <a class="icon-link" href="./shopping_cart.html"><img src="../public/bullock-cart.png"
+                                    alt=""></a>
+
+                        </li>
+                        <li class="nav-link"><a href="./index.html">HOME</a></li>
+                        <li class="nav-link">
+                            <a href="./brewing_equipment.html">BREWING EQUIPMENT</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="./coffee_selection.html">COFFEE SELECTION</a>
+                        </li>
+                        <li class="nav-link"><a href="./events_and_workshops.html">EVENTS</a></li>
+                        <li class="nav-link"><a href="./special_offers_and_subscriptions.html">SUBSCRIPTIONS</a></li>
+                        <li> <button class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <img src="../public/remove.png" alt="remove">
+                            </button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cart_section">
+      <p class="text-center d-none" id="total-item"></p>
+      <div id="cart_container" class="cart-container">
+      </div>
+      <p class="text-center d-none" id="total"></p>
+  </div>
+
+    <!-- footer-section -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-content-group">
+          <h3 class="footer-content-title">Bean Boutique</h3>
+          <p class="footer-content-context">
+            At Bean Boutique, we are passionate about crafting memorable coffee
+            moments. Our carefully curated blends are roasted to perfection and
+            made for those who appreciate the art of every brew from bean to
+            cup.
+          </p>
+        </div>
+        <ul class="quick-link-group">
+          <li class="quick-link"><a href="./index.html">Home</a></li>
+          <li class="quick-link">
+            <a href="./coffee_selection.html">Coffee Selection</a>
+          </li>
+          <li class="quick-link">
+            <a href="./brewing_equipment.html">Brewing Equipment</a>
+          </li>
+          <li class="quick-link">
+            <a href="./events_and_workshops.html">Events</a>
+          </li>
+          <li class="quick-link">
+            <a href="./special_offers_and_subscriptions.html">Subscriptions</a>
+          </li>
+          <li class="quick-link"><a href="./contact_us.html">Contact Us</a></li>
+        </ul>
+        <hr class="line" >
+        <p class="copy-right">©2025 Bean Boutique - All right reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      let cart = JSON.parse(localStorage.getItem("cart"));
+
+      let cart_container = document.getElementById("cart_container");
+      let total = document.getElementById("total");
+      let totalItem = document.getElementById("total-item");
+
+      let li = (item) => {
+        return `
+        <div class="item-list">
+            <img src="${item.image}" alt="${item.image}">
+            <p>${item.name}</p>
+            <p>$${item.price}</p>
+        </div>`;
+      };
+
+      let createList = (cart) => {
+        cart.forEach((item) => {
+          let list = li(item);
+          cart_container.innerHTML += list;
+        });
+      };
+
+      let createBanner = () => {
+        cart_container.innerHTML += `<h3>THE CART IS EMPTY!</h3>`;
+      };
+
+      if (cart?.length > 0) {
+        let total_item = `TOTAL ITEM - ${cart.length}`;
+        totalItem.classList.remove("d-none");
+        totalItem.innerText = total_item;
+
+        let totalPrice =
+          "TOTAL - $" + cart.reduce((prev, current) => prev + current.price, 0);
+        total.classList.remove("d-none");
+        total.innerText = totalPrice;
+
+        createList(cart);
+      } else {
+        createBanner();
+      }
+    </script>
+  </body>
+</html>

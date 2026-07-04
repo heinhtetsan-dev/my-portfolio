@@ -1,0 +1,23 @@
+:root {
+    --color-Blue-600: hsl(185, 75%, 39%);
+    --color-Navy-950: hsl(229, 23%, 23%);
+    --color-Gray-500: hsl(227, 10%, 46%);
+    --color-Gray-100: hsl(225, 10%, 92%);
+}
+
+body {
+    background-color: var(--color-Blue-600);
+}
+
+h2 {
+    /* color: var(--color-Navy-950); */
+}
+
+.card{
+    transition: 0.3s ease-in-out;
+}
+.card:hover {
+        transform: scale(1.02);
+        /* translate: 0 -10px; */
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}

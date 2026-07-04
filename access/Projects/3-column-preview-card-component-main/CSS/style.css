@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --Gold-500: hsl(31, 77%, 52%);
+    --Cyan-800: hsl(184, 100%, 22%);
+    --Green-950: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Gray-100: hsl(0, 0%, 95%);
+}
+
+/* Step1 -CSSတွေreset ချ
+Step2 -Color Variable တွေကြေညာ
+Step3 -Font တွေချိတ် */
+/* Step4 - Nesting လုပ် */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--Gray-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+
+    .card-container {
+        background-color: aqua;
+        max-width: 800px;
+        display: grid;
+        overflow: hidden;
+        border-radius: 0.4rem;
+
+        @media(min-width:768px){
+            grid-template-columns: repeat(3,1fr);
+        }
+        .card {
+            padding: 2rem;
+
+            &:nth-child(1) {
+                background-color: var(--Gold-500);
+                button{
+                    color: var(--Gold-500);
+                }
+            }
+
+            &:nth-child(2) {
+                background-color: var(--Cyan-800);
+                button{
+                    color: var(--Cyan-800);
+                }
+            }
+
+            &:nth-child(3) {
+                background-color: var(--Green-950);
+                button{
+                    color: var(--Green-950);
+                }
+            }
+
+            /* img {} */
+
+            body {
+                font-size: 15px;
+            }
+
+            h2 {
+                font-size: 2rem;
+                text-transform: uppercase;
+                color: var(--Gray-100);
+                margin: 1.5rem 0;
+            }
+
+            p {
+                color: var(--Transparent-white);
+                line-height: 1.7;
+                  @media(min-width: 768px) {
+                    min-height: 200px;
+                }
+            }
+
+            a {
+                margin-top: 1rem;
+                display: block;
+                /* @media(min-width: 768px) {
+                    margin-top: 4rem;
+                } */
+
+
+                button {
+                    background-color: var(--Gray-100);
+                    padding: 0.9rem 1.5rem;
+                    border: none;
+                    border-radius: 30px;
+                    text-transform: capitalize;
+                    &:hover{
+                        background-color: transparent;
+                        color: var(--Gray-100);
+                        outline: 2px solid var(--Gray-100);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Digital Clock</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="https://media1.tenor.com/m/WlaTbaEY5u4AAAAC/dandadan-opening.gif" alt="GIF">
+            </div>
+            <div class="title">Digital lock</div>
+
+            <div class="toggle">
+                <p class="btn active" id="btn-12">12 hr</p>
+                <p class="btn" id="btn-24">24 hr</p>
+            </div>
+        </div>
+        <div class="display">
+            <h2 class="time" id="time"></h2>
+            <div class="season"><span class="month" id="month"></span>
+                <p class="date" id="date"></p>
+            </div>
+        </div>
+        <div class="footer">
+            <span> Local Time <i class="fa-solid fa-earth-asia"></i></span>
+        </div>
+    </div>
+
+
+
+    <script src="./clock.js"></script>
+</body>
+
+</html>
