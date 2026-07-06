@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./access/css/home.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./access/tailwind.js">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/tailwind.js">
     <style type="text/tailwindcss">
         :root {
             --btn-color: #334155;
@@ -51,7 +52,7 @@
     <title>Projects</title>
 </head>
 
-<body class="w-full h-screen">
+<body class="w-full max-h-max">
 
 
     <header>
@@ -72,14 +73,14 @@
             </label>
 
             <ul class="nav-link">
-                <li><a href="./index.html">About</a></li>
+                <li><a href="/index.html">About</a></li>
                 <li><a href="#">Services</a></li>
 
                 <li class="relative group py-2 nav-dropdown">
                     <!-- peer checkbox: tap to open on mobile, hover still works on desktop -->
                     <input type="checkbox" id="portfolio-dropdown-toggle" class="hidden peer">
                     <label for="portfolio-dropdown-toggle"
-                        class="cursor-pointer select-none transition-colors duration-200 flex items-center justify-between md:justify-start gap-1 w-full">
+                        class="cursor-pointer select-none transition-colors duration-200 flex items-center justify-center md:justify-start gap-1 w-full">
                         Portfolio
                         <i
                             class="fa-solid fa-angle-down text-[10px] mt-0.5 transition-transform duration-300 peer-checked:rotate-180 md:group-hover:rotate-180"></i>
@@ -124,7 +125,6 @@
 
     <div class="bg-gradient-to-t from-[#000000] to-[#152331] bg-no-repeat">
         <div class="selector mx-auto pt-30 pb-12 text-white min-h-96">
-
             <div class="max-w-5xl mx-auto px-4">
                 <div class="text-center pt-25 pb-12 text-white">
                     <h2 class="text-3xl md:text-4xl font-bold">Portfolio Showcase</h2>
@@ -133,32 +133,32 @@
                     </p>
                 </div>
 
-                <div class="explore-box flex justify-center">
+                <div class="explore-box flex justify-center w-full max-w-md mx-auto px-2">
                     <ul
-                        class="flex gap-4 bg-white/6 backdrop-blur-[12px] p-2 rounded-xl border border-white/10 [box-shadow:inset_1px_1px_4px_rgba(255,255,255,0.2),inset_-1px_-1px_6px_rgba(0,0,0,0.3),0_4px_12px_rgba(0,0,0,0.15)] text-[#e5e5e5]">
+                        class="flex justify-between items-center gap-1.5 bg-white/6 backdrop-blur-[12px] p-1.5 rounded-xl border border-white/10 [box-shadow:inset_1px_1px_4px_rgba(255,255,255,0.2),inset_-1px_-1px_6px_rgba(0,0,0,0.3),0_4px_12px_rgba(0,0,0,0.15)] text-[#e5e5e5] w-full sm:w-96">
 
-                        <li>
-                            <a href="./projects.html" class="block">
+                        <li class="flex-1">
+                            <a href="./projects.html" class="block w-full">
                                 <button
-                                    class="min-w-[100px] px-6 py-2.5 text-sm font-semibold tracking-[0.3px] rounded-lg bg-slate-700/40 cursor-pointer transition-all duration-1000 ease-in-out hover:text-slate-900 hover:bg-slate-800 ">
+                                    class="w-full text-center px-2 sm:px-4 py-2 text-[12px] sm:text-sm font-semibold tracking-[0.3px] rounded-lg bg-slate-700/40 cursor-pointer transition-all duration-300 ease-in-out hover:text-slate-900 hover:bg-slate-800 truncate">
                                     Projects
                                 </button>
                             </a>
-                        </li>
+                        </li class="flex-1">
 
-                        <li>
-                            <a href="./certificates.html" class="block">
+                        <li class="flex-1">
+                            <a href="./certificates.html" class="block w-full">
                                 <button
-                                    class="min-w-[100px] px-6 py-2.5 text-sm font-semibold tracking-[0.3px] rounded-lg bg-slate-700/40 cursor-pointer transition-all duration-1000 ease-in-out hover:text-slate-900  hover:bg-slate-800">
+                                    class="w-full text-center px-2 sm:px-4 py-2 text-[12px] sm:text-sm font-semibold tracking-[0.3px] rounded-lg bg-slate-700/40 cursor-pointer transition-all duration-300 ease-in-out hover:text-slate-900 hover:bg-slate-800 truncate">
                                     Certificates
                                 </button>
                             </a>
                         </li>
 
-                        <li>
-                            <a href="./tech-stack.html" class="block">
+                        <li class="flex-1">
+                            <a href="./tech-stack.html" class="block w-full">
                                 <button
-                                    class="min-w-[100px] px-6 py-2.5 text-sm font-semibold tracking-[0.3px] rounded-lg bg-slate-700/40 cursor-pointer transition-all duration-1000 ease-in-out hover:text-slate-900  hover:bg-slate-800 ">
+                                    class="w-full text-center px-2 sm:px-4 py-2 text-[12px] sm:text-sm font-semibold tracking-[0.3px] rounded-lg bg-slate-700/40 cursor-pointer transition-all duration-300 ease-in-out hover:text-slate-900 hover:bg-slate-800 truncate">
                                     Skills
                                 </button>
                             </a>
@@ -189,7 +189,7 @@
                             <span class="tech-tag">CSS</span>
                             <span class="tech-tag">JavaScript</span>
                         </div>
-                        <div><a href="./access/Projects/digital-clock/digital-clock.html"
+                        <div><a href="./assets/Projects/digital-clock/digital-clock.html"
                                 class="project-link">digital_clock</a></div>
                     </div>
 
@@ -201,7 +201,7 @@
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">Tailwind CSS</span>
                         </div>
-                        <div><a href="./access/Projects/product-list/index.html"
+                        <div><a href="/assets/Projects/product-list/index.html"
                                 class="project-link">product-list-with-cart-main</a></div>
                     </div>
 
@@ -213,7 +213,7 @@
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">Tailwind CSS</span>
                         </div>
-                        <div><a href="./access/Projects/product-preview-card/index.html"
+                        <div><a href="/assets/Projects/product-preview-card/index.html"
                                 class="project-link">product-preview-card</a></div>
                     </div>
 
@@ -225,7 +225,7 @@
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
                         </div>
-                        <div><a href="./access/Projects/Social-proof-section/social-proof-section-master/index.html"
+                        <div><a href="/assets/Projects/Social-proof-section/social-proof-section-master/index.html"
                                 class="project-link">social-proof</a></div>
                     </div>
 
@@ -237,7 +237,7 @@
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">Tailwind CSS</span>
                         </div>
-                        <div><a href="./access/Projects/profile-card-component/profile-card-component-main/index.html"
+                        <div><a href="/assets/Projects/profile-card-component/profile-card-component-main/index.html"
                                 class="project-link">profile-component</a></div>
                     </div>
 
@@ -249,7 +249,7 @@
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
                         </div>
-                        <div><a href="./access/Projects/3-column-preview-card-component-main/index.html"
+                        <div><a href="/assets/Projects/3-column-preview-card-component-main/index.html"
                                 class="project-link">3-column-preview-card</a></div>
                     </div>
 
@@ -262,7 +262,7 @@
                             <span class="tech-tag">Bootstrap CSS</span>
                             <span class="tech-tag">JavaScript</span>
                         </div>
-                        <div><a href="./access/Projects/bean-boutique-coffee/html/index.html"
+                        <div><a href="/assets/Projects/bean-boutique-coffee/html/index.html"
                                 class="project-link">bean-boutique-coffee-shop</a></div>
                     </div>
 
@@ -273,7 +273,7 @@
                         <div class="tag-container">
                             <span class="tech-tag">MySQL</span>
                         </div>
-                        <div><a href="./access/Projects/bloomfield-database.sql" class="project-link"></a></div>
+                        <div><a href="/assets/Projects/bloomfield-database.sql" class="project-link"></a></div>
                     </div>
 
                     <div class="project-row">
