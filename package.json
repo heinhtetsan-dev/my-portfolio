@@ -1,0 +1,23 @@
+{
+  "name": "my_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "tailwindcss -i ./assets/css/home.css -o ./assets/css/tailwind.js --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heinhtetsan-dev/my-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "git+https://github.com/heinhtetsan-dev/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/heinhtetsan-dev/my-portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
