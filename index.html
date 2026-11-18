@@ -78,14 +78,14 @@
                     <button id="modebtn-mobile" class="modebtn"><i class="fa-solid fa-lightbulb"></i> Mode</button>
                 </li>
                 <li class="mobile-only-actions">
-                    <a href="https://mail.google.com/mail/u/1/#inbox" class="btn-hire">Hire Me</a>
+                    <a href="/index.html#contact" class="btn-hire">Hire Me</a>
                 </li>
             </ul>
 
             <!-- Desktop  -->
             <div class="nav-action">
                 <button id="modebtn" class="modebtn"><i class="fa-solid fa-lightbulb"></i></button>
-                <a href="https://mail.google.com/mail/u/1/#inbox" class="btn-hire">Hire Me</a>
+                <a href="/index.html#contact" class="btn-hire">Hire Me</a>
             </div>
         </nav>
         <!-- nav bar end  -->
@@ -309,7 +309,7 @@
         </section>
 
 
-        <div class="contant-box">
+        <div class="contant-box" id="contact">
             <h2>Contact</h2>
             <div class="contact">
                 <div class="follow">
@@ -325,15 +325,17 @@
 
                 <div class="mail-box">
                     <p>Send me an E-mail.</p>
-                    <form action="https://formspree.io/f/xeebpzag" method="POST">
+                    <form id="contact-form" action="https://formspree.io/f/xeebpzag" method="POST">
+                        <input type="hidden" name="_subject" value="New message from your portfolio">
                         <div class="input-box">
                             <input type="text" name="name" placeholder="Name" required>
-                            <input type="email" name="email" placeholder="E-mail">
-                            <input type="subject" name="subject" placeholder="Subject">
+                            <input type="email" name="email" placeholder="E-mail" required>
+                            <input type="text" name="subject" placeholder="Subject">
+                            <textarea name="message" rows="4" placeholder="Message" required></textarea>
                         </div>
                         <div class="mail-sumit">
-                            <a href="https://mail.google.com/mail/u/1/#inbox"><button type="submit">Send
-                                    Message</button></a>
+                            <button type="submit">Send Message</button>
+                            <p id="form-status" role="status" aria-live="polite"></p>
                         </div>
                     </form>
                 </div>
@@ -343,7 +345,31 @@
 
     <div class="boots"></div>
 
-
+    <script>
+        // Send the contact form to Formspree without leaving the page.
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+        contactForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const button = contactForm.querySelector('button[type="submit"]');
+            button.disabled = true;
+            formStatus.textContent = 'Sending...';
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: { Accept: 'application/json' }
+                });
+                if (!response.ok) throw new Error('Request failed');
+                contactForm.reset();
+                formStatus.textContent = 'Thank you! Your message has been sent. I will reply soon.';
+            } catch (error) {
+                formStatus.textContent = 'Sorry, the message could not be sent. Please email me at heinhtetsan5050@gmail.com.';
+            } finally {
+                button.disabled = false;
+            }
+        });
+    </script>
 </body>
 
 </html>

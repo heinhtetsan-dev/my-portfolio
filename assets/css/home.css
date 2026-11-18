@@ -525,10 +525,23 @@ footer {
 
                             &:hover { color: var(--hover-color); }
                         }
+
+                        textarea {
+                            flex-basis: 100%;
+                            border-bottom: #e9eaee 1px solid;
+                            background: transparent;
+                            color: inherit;
+                            resize: vertical;
+                        }
                     }
 
                     .mail-sumit {
                         padding: 2rem 0 4rem;
+
+                        #form-status {
+                            padding-top: 1rem;
+                            font-size: 0.9rem;
+                        }
 
                         button {
                             background-color: var(--btn-color);
